@@ -6,12 +6,13 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "Tremorcontrol1",
-  database: "amazonDB"
+  database: "bamazonDB"
 });
 
 connection.connect(function(err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
+    console.log("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ")
     displayItems();
   });
 
