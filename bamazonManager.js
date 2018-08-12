@@ -1,3 +1,4 @@
+// For this file to be complete I would need to make the other three functions work for showing low inventory items, adding items to inventory, and adding new products. The required homework works fine but this I couldn't get in time.
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var cTable = require("console.table") 
@@ -51,9 +52,12 @@ function managerChoices() {
         }
     ]).then(function(answers){
             var answers = choices[""];
-            if(answers = choices[0]){
-                console.log("Current Items for sale are: ");
+            if(answers = "View items for Sale"){
+                console.log("Current items for sale are: ");
                 displayItems();
+            }
+            if(answers = "View Low Inventory Item"){
+              console.log("manager want's to view low inventory items.");
             }
     })
 }
